@@ -84,3 +84,41 @@ h1{
 .menu-link a:hover{
   color: #f06c64;
 }
+
+.presentation {
+  box-sizing: border-box;
+  height: 600px;
+  background-color: #ef6c64;
+  border-bottom: 6px solid #ea666b;
+}
+
+.slider{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  height: 100%;
+  cursor: pointer;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vertical{
+  padding-top: 52px;
+}
+
+.horizontal {
+  padding-bottom: 121px;
+  padding-left: 69px;
+}
+
+.arrow{
+  margin: 42px;
+  padding-top: 50px;
+}
