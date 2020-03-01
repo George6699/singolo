@@ -1,0 +1,142 @@
+@import "font.css";
+
+html {
+  font-size: 10px;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'Lato', Verdana, sans-serif;
+}
+
+.wrapper{
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+ .center{ 
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio{
+  background-color: #2d303a;
+  border-bottom: 5px solid #323746;
+  padding-bottom: 48px;
+}
+
+.portfolio h2{
+  font-size: 3rem;
+  color: #666d89;
+  letter-spacing: -0.02rem;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.portfolio p{
+  font-size: 1.8rem;
+  color: #767e9e;
+  letter-spacing: -0.022rem;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.portfolio-menu ul{
+  padding: 0;
+}
+
+.portfolio-menu ul li{
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: -0.03rem;
+  color: #767e9e;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+}
+
+.portfolio-menu ul li:hover{
+  color: #c5c5c5;
+  border: 1px solid #c5c5c5;
+}
+
+.layout-4-coloumn {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 621px;
+  overflow: hidden;
+  
+}
+
+div.portfolio-img{
+  height: 186px;
+  width: 220px;
+  overflow: hidden;
+  margin: 6px;
+}
+
+.about-us{
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+  padding-bottom: 43px;
+}
+
+.about-us h2{
+  font-size: 3rem;
+  letter-spacing: -0.02rem;
+  color: #666d89;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 59px;
+}
+
+.about-us p{
+  font-size: 1.8rem;
+  letter-spacing: -0.008rem;
+  color: #767e9e;
+  line-height: 3rem;
+  font-weight: 300;
+  margin: 0;
+  padding-top: 18px;
+  text-align: justify;
+}
+
+.layout-3-coloumn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+
+.card{
+  width: 300px;
+}
+
+.card h3{
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #666d89;
+  font-weight: 900;
+  margin: 0;
+  padding: 11px 0;;
+}
+
+.card p{
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: #767e9e;
+  letter-spacing: -0.0048rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.icons{
+  padding-top: 30px;
+}
