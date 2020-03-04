@@ -23,16 +23,16 @@ body{
 }
 
 .portfolio{
+  height: 865px;
   background-color: #2d303a;
   border-bottom: 5px solid #323746;
-  padding-bottom: 48px;
 }
 
 .portfolio h2{
   font-size: 3rem;
   color: #666d89;
-  letter-spacing: -0.02rem;
-  font-weight: 900;
+/* letter-spacing: -0.3rem;*/ /* При проверке на Pixel-perfect font-weigth был заменен на 700  */
+  font-weight: 700;
   margin: 0;
   padding-top: 60px;
 }
@@ -40,24 +40,31 @@ body{
 .portfolio p{
   font-size: 1.8rem;
   color: #767e9e;
-  letter-spacing: -0.022rem;
+  letter-spacing: -0.0017rem;
+  font-weight: 300;
   line-height: 30px;
   margin-bottom: 0;
 }
 
 .portfolio-menu ul{
   padding: 0;
+  margin: 1em 0 0 0;
+}
+
+.portfolio-menu ul li a{
+  text-decoration: none;
+  color: #767e9e;
 }
 
 .portfolio-menu ul li{
   list-style-type: none;
   display: inline-block;
   font-size: 1.2rem;
-  letter-spacing: -0.03rem;
-  color: #767e9e;
+  font-weight: 400;
   cursor: pointer;
-  padding: 5px;
-  margin: 5px;
+  padding: 2px 6.1px;
+  margin-right: 8px;
+  margin-top: 2px;
   border: 1px solid #666d89;
   border-radius: 5px;
 }
@@ -67,19 +74,24 @@ body{
   border: 1px solid #c5c5c5;
 }
 
+.portfolio-menu ul li:hover a{
+  color: #c5c5c5;
+}
+
 .layout-4-coloumn {
   display: flex;
   flex-wrap: wrap;
-  max-height: 621px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-height: 620px;
   overflow: hidden;
-  
 }
 
 div.portfolio-img{
   height: 186px;
   width: 220px;
   overflow: hidden;
-  margin: 6px;
+  margin-top: 20px;
 }
 
 .about-us{
@@ -90,7 +102,7 @@ div.portfolio-img{
 
 .about-us h2{
   font-size: 3rem;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.035rem;
   color: #666d89;
   font-weight: 900;
   margin: 0;
@@ -99,7 +111,7 @@ div.portfolio-img{
 
 .about-us p{
   font-size: 1.8rem;
-  letter-spacing: -0.008rem;
+  letter-spacing: 0.023rem;
   color: #767e9e;
   line-height: 3rem;
   font-weight: 300;
@@ -112,31 +124,44 @@ div.portfolio-img{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 55px;
+  padding-top: 45px;
 }
 
 .card{
-  width: 300px;
+  max-width: 300px;
+  overflow: hidden;
 }
 
 .card h3{
   font-size: 1.8rem;
   line-height: 1.8rem;
   color: #666d89;
-  font-weight: 900;
+  font-weight: 700;
   margin: 0;
   padding: 11px 0;;
 }
 
 .card p{
   font-size: 1.2rem;
-  line-height: 2.2rem;
+  line-height: 2rem;
   color: #767e9e;
-  letter-spacing: -0.0048rem;
+  letter-spacing: -0.005em;
   font-weight: 400;
   margin: 0;
+  padding: 0;
+}
+
+.card img{
+  position: relative;
+  right: 4px;
+  bottom: 2px;
 }
 
 .icons{
-  padding-top: 30px;
+  padding-top: 27px;
+  padding-left: 3px;
+}
+
+.icons a{
+  padding-right: 4px;
 }
