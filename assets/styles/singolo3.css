@@ -142,7 +142,6 @@ body{
   width: 153px;
 }
 
-.social img{
-  background-color: ;
+.social a{
+  padding-left: 3px;
 }
-
