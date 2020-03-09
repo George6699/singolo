@@ -166,6 +166,10 @@ h1{
   overflow: hidden;
 }
 
+.first, .second, .third{
+  margin-bottom: 25px;
+}
+
 .cell img {
   width: 62px;
   height: 68px;
