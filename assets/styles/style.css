@@ -166,7 +166,7 @@ h1{
   overflow: hidden;
 }
 
-.first, .second, .third{
+.cell.first, .cell.second, .cell.third{
   margin-bottom: 25px;
 }
 
