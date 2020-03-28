@@ -1,3 +1,3 @@
 # Singolo
 
-https://george6699.github.io/singolo/
+[Singolo-DOM](https://george6699.github.io/singolo/)
