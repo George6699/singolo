@@ -284,7 +284,7 @@ h1{
 }
 
 .portfolio{
-  height: 865px;
+  height: 880px;
   background-color: #2d303a;
   border-bottom: 5px solid #323746;
 }
@@ -307,45 +307,37 @@ h1{
   margin-bottom: 0;
 }
 
-.portfolio-menu ul{
+.portfolio-menu button{
   padding: 0;
   margin: 1em 0 0 0;
-}
-
-.portfolio-menu ul li a{
-  text-decoration: none;
-  color: #767e9e;
-}
-
-.portfolio-menu ul li{
-  list-style-type: none;
-  display: inline-block;
   font-size: 1.2rem;
   font-weight: 400;
+  color: #767e9e;
   cursor: pointer;
   padding: 2px 6.1px;
   margin-right: 8px;
   margin-top: 2px;
   border: 1px solid #666d89;
   border-radius: 5px;
+  background: none;
 }
 
-.portfolio-menu ul li:hover{
+.portfolio-menu button:hover{
   color: #c5c5c5;
   border: 1px solid #c5c5c5;
 }
 
-.portfolio-menu ul li:hover a{
-  color: #c5c5c5;
-}
-
-.layout-4-coloumn {
+.portfolio-4-coloumn {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  max-height: 620px;
+  max-height: 630px;
   overflow: hidden;
+}
+
+.active-img{
+  border: 5px outset #F06C64;
 }
 
 div.portfolio-img{
@@ -442,7 +434,7 @@ div.portfolio-img{
 
 .quote{
   box-sizing: border-box;
-  height: 655px;
+  height: 720px;
   background-color: #f06c64;
   border-bottom: 5px solid #ea676b;
 }
@@ -506,6 +498,7 @@ div.portfolio-img{
   line-height: 10px;
   overflow: hidden;
   resize: none;
+  
 }
 
 .information{
@@ -550,6 +543,54 @@ div.portfolio-img{
 .contacts a{
   text-decoration: none;
   color: #f0d8d9;
+}
+
+.hidden{
+  display: none;
+}
+
+#message{
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #0005;
+}
+
+.pop-up{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: #cfb1b1;
+  border: 5px solid #780283;
+  border-radius: 5px;
+}
+
+.pop-up h3{
+  color: blueviolet;
+  font-family: 'Lato Bold';
+}
+
+.pop-up p{
+  margin: 30px 20px;
+  max-width: 480px;
+  height: 10px;
+  max-height: 300px;
+  font-family: 'Lato Light';
+  color: #631c1f;
+}
+
+.close-button {
+  height: 40px;
+  width: 50px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 .footer{

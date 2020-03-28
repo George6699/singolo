@@ -98,58 +98,34 @@
           </div>
       </div>
     </section>
+
     <section class="portfolio" id="portfolio">
 			<div class="center">
 				<h2>Portfolio</h2>
 				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-				<div class="portfolio-menu">
-					<ul>
-						<li><a href="#">All</a></li>
-						<li><a href="#">Web Design</a></li>
-						<li><a href="#">Graphic Design</a></li>
-						<li><a href="#">Artwork</a></li>
-					</ul>
+				<div class="portfolio-menu" id="portfolio-menu">
+					<button class="portfolio-nav active">All</button>
+          <button class="portfolio-nav">Graphic Design</button>
+          <button class="portfolio-nav">Artwork</button>
+          <button class="portfolio-nav">Web Design</button>
 				</div>
-				<div class="layout-4-coloumn">
-					<div class="portfolio-img">
-						<img src="./assets/images/row1 img1.svg" alt="1">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row1 img2.svg" alt="2">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row1 img3.svg" alt="3">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row1 img4.svg" alt="4">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row2 img1.svg" alt="5">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row2 img2.svg" alt="6">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row2 img3.svg" alt="7">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row2 img4.svg" alt="8">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row3 img1.svg" alt="9">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row3 img2.svg" alt="10">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row3 img3.svg" alt="11">
-					</div>
-					<div class="portfolio-img">
-						<img src="./assets/images/row3 img4.svg" alt="12">
-					</div>
+				<div class="portfolio-4-coloumn" id="portfolio-4-coloumn">
+					<div class="portfolio-img"><img src="./assets/images/row1 img1.svg" alt="1"></div>
+					<div class="portfolio-img"><img src="./assets/images/row1 img2.svg" alt="2"></div>
+					<div class="portfolio-img"><img src="./assets/images/row1 img3.svg" alt="3"></div>
+					<div class="portfolio-img"><img src="./assets/images/row1 img4.svg" alt="4"></div>
+					<div class="portfolio-img"><img src="./assets/images/row2 img1.svg" alt="5"></div>
+					<div class="portfolio-img"><img src="./assets/images/row2 img2.svg" alt="6"></div>
+					<div class="portfolio-img"><img src="./assets/images/row2 img3.svg" alt="7"></div>
+					<div class="portfolio-img"><img src="./assets/images/row2 img4.svg" alt="8"></div>
+					<div class="portfolio-img"><img src="./assets/images/row3 img1.svg" alt="9"></div>
+					<div class="portfolio-img"><img src="./assets/images/row3 img2.svg" alt="10"></div>
+					<div class="portfolio-img"><img src="./assets/images/row3 img3.svg" alt="11"></div>
+					<div class="portfolio-img"><img src="./assets/images/row3 img4.svg" alt="12"></div>
 				</div>
 			</div>
-		</section>
+    </section>
+    
 		<section class="about-us" id="about">
 			<div class="center">
 				<h2>About Us</h2>
@@ -200,12 +176,14 @@
           non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <div class="layout-2-coloumn">
-            <form class="form" action="/action_page.php" target="_blank" method="post">
-            <input type="text" placeholder="Name (Required)" required name="name" id="name">
-            <input type="email" placeholder="Email (Required)" required name="email" id="email">
-            <input type="text" placeholder="Subject" name="subject" id="subject">
-            <textarea name="description" id="description" cols="85" rows="20" wrap="soft" placeholder="Describe your project in detail..."></textarea>
-            <button type="submit">Submit</button>
+            <form class="form" action="" method="post">
+              <input type="text" required id="name" name="name" placeholder="Name (Required)"><br>
+              <input type="email" required id="email" name="email" placeholder="Email (Required)"><br>
+              <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+            <textarea name="description" id="description" cols="85" rows="20" wrap="soft" placeholder="Describe your project in detail...">
+
+  </textarea>
+            <button type="submit"id="submit" value="Submit">Submit</button>
             </form>
             <div class="information">
               <h3>Contact Information</h3>
@@ -217,6 +195,13 @@
                   <p class="letter"><img src="./assets/images/Letter.gif" alt="letter">&nbsp;&nbsp;&nbsp;<a href="mailto:info@singolo.com">info@singolo.com</a></p>
                 </div> 
             </div>
+            <div class="message hidden" id="message">
+              <div class="pop-up">
+              <h3>Письмо отправлено</h3>
+              <p id="message-subject"></p>
+              <p id="message-descr"></p>
+              <button class="close-button" id="close-button">OK</button>
+          </div>
           </div>
       </div>
     </section>

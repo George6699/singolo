@@ -255,3 +255,49 @@ var multiItemSlider = (function () {
 var slider = multiItemSlider('.slider', {
   isCycling: true
 })
+
+
+const portfolioNav = document.getElementById('portfolio-menu');
+const portfolioImages = document.getElementById('portfolio-4-coloumn');
+
+function shiftPortfolio() {
+  let first = portfolioImages.firstElementChild;
+  let last = portfolioImages.lastElementChild;
+  last.after(first);
+}
+
+portfolioNav.addEventListener('click', (event) => {
+  if(event.target.tagName === 'BUTTON'){
+      portfolioNav.querySelectorAll('button').forEach(el => el.classList.remove('active'));
+      event.target.classList.add('active');
+      shiftPortfolio();
+  }
+})
+
+portfolioImages.addEventListener('click', (event) => {
+  const div = event.target.parentNode;
+  if(event.target.tagName === 'IMG'){
+      portfolioImages.querySelectorAll('div').forEach(el => el.classList.remove('active-img'));
+      div.classList.add('active-img');
+  }
+})
+
+const submit = document.getElementById('submit');
+const message = document.getElementById('message');
+const closeButton = document.getElementById('close-button');
+
+submit.addEventListener('click', (event) => {
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  if (name.validity.valid && email.validity.valid) {
+      event.preventDefault();
+      message.classList.remove('hidden');
+      document.getElementById('message-subject').innerText = subject.value ? 'Тема: ' + subject.value : 'Без темы';
+      document.getElementById('message-descr').innerText = description.value ? 'Описание: ' + description.value : 'Без описания';
+  }
+})
+
+closeButton.addEventListener('click', () => {
+  message.classList.add('hidden');
+  document.getElementById('form').reset();
+});
